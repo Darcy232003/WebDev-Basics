@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Events in JS</title>
+    </head>
+    <body>
+        <style>
+            div{
+                height: 200px;
+                width: 200px;
+                background-color: bisque;
+            }
+        </style>
+
+        <div id = "divbox" onmouseover="zoomIn()" onmouseout="zoomOut()">
+        </div>
+
+
+        <script>
+            function zoomIn(){
+                document.getElementById('divbox').style.height="400px";
+                document.getElementById('divbox').style.width="400px";
+                document.getElementById('divbox').style.backgroundColor="red";
+            }
+
+            function zoomOut(){
+                document.getElementById('divbox').style.height="200px";
+                document.getElementById('divbox').style.width="200px";
+                document.getElementById('divbox').style.backgroundColor="bisque";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form>
+            <input type="text" name="firstname_java" id="fnamejs" placeholder="Enter first name">
+            <input type="text" name="lastname_java" id="lnamejs" placeholder="Enter last name">
+            <input type="number" name="age" id="agejs" placeholder="Enter your age";>
+            <input type = "submit" onclick="getName()">
+        </form>
+
+        <script>
+            function getName(){
+                fname = document.getElementById("fnamejs").value;
+                lname = document.getElementById("lnamejs").value;
+                age=document.getElementById("agejs").value;
+                window.alert("Hello " + fname + " " + lname + " Age is " + age );
+            }
+        </script>
+    </body>
+</html>
