@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <style>
+            div{
+                background-color: aliceblue;
+                width: 400px;
+            }
+
+            #answer{
+                background-color: aquamarine;
+                border: solid blue;
+            }
+        </style>
+
+        <div>
+        <h1 style="background-color:bisque; border: solid darkblue;">Simple Calculator</h1>
+        <input type="number" name="num1" id="num1js" placeholder="Enter first number">
+        <input type="number" name="num2" id="num2js" placeholder="Enter second number">
+        <br>
+        <input type="submit" value="+" onclick="sum()">
+        <input type="submit" value="-" onclick="sub()">
+        <input type="submit" value="*" onclick="mul()">
+        <input type="submit" value="/" onclick="div()">
+
+        <p id="answer">Answer</p>
+        <p style="background-color: antiquewhite;" id="Answer">here</p>
+        </div>
+        <script>
+            function sum(){
+                num1 = parseInt(document.getElementById("num1js").value);
+                num2 = parseInt(document.getElementById("num2js").value);
+                add = num1+num2;
+                document.getElementById("Answer").innerHTML=add;
+            }
+
+            function sub(){
+                num1=parseInt(document.getElementById("num1js").value);
+                num2=parseInt(document.getElementById("num2js").value);
+                min = num1-num2;
+                document.getElementById("Answer").innerHTML=min;
+            }
+
+            function mul(){
+                num1 = parseInt(document.getElementById("num1js").value);
+                num2 = parseInt(document.getElementById("num2js").value);
+                result = num1*num2;
+                document.getElementById("Answer").innerHTML=result;
+            }
+
+            function div(){
+                num1 = parseInt(document.getElementById("num1js").value);
+                num2 = parseInt(document.getElementById("num2js").value);
+                result = num1/num2;
+                document.getElementById("Answer").innerHTML=result;
+            }
+        </script>
+    </body>
+</html>
