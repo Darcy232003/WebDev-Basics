@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Properties in CSS</title>
+    </head>
+
+    <body>
+        <style>
+            p{
+                color:blueviolet;
+            }
+
+            #parent{
+                background-color: red;
+                height: 200px;
+                width: 200px;
+                margin: 100px 00px 00px 200px;/*top right bottom left*/
+                padding: 120px 00px 20px 60px ;/*top right bottom left*/
+            }
+
+            #child{
+                background-color: antiquewhite;
+                height: 100px;
+                width:100px;
+            }
+            /*psudo element*/
+            #parent:hover{
+                background-color:navy;
+            }
+
+            #child:hover{
+                background-color: yellow;
+            }
+
+            p::first-letter{
+                color:black;
+                font-size: xx-large;
+            }
+
+            p::before{
+                content:"$";
+            }
+
+            p::after{
+                content:" Last-line";
+                color:black;
+            }
+            
+        </style>
+        
+        <p>consequat id porta nibh venenatis</p>
+        <div id = "parent">
+            <div id = "child"></div>
+        </div>
+
+
+    </body>
+</html>

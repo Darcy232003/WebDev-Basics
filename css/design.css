@@ -1,0 +1,43 @@
+/*if we take element name as selector name
+it is element type selector
+it takes each and every element*/
+p{
+    color:red;
+}
+
+div{
+    background-color: yellow;
+    width: 200px;
+}
+
+/*id type selector
+it starts with # */
+#changeDiv{
+    background-color: hotpink;
+    width: 300px;
+}
+
+/*id type selector*/
+#changeColor{
+    color :blue;
+}
+
+/*class type selector
+it starts with . */
+.border{
+    border: solid black 3px;
+}
+
+/*group type selector*/
+main div{
+    border:solid blue;
+}
+
+section div{
+    border: solid darkgreen 4px;
+}
+
+/*universal type selector*/
+*{
+    background-color: peachpuff;
+}

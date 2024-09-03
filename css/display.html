@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Property - display</title>
+    </head>
+
+    <body>
+        <style>
+            div{
+                background-color: cyan;
+                height: 100px;
+                width: 300px;
+                display:grid;
+            }
+
+            button{
+                background-color: lavenderblush;
+                border-radius: 20px;
+                width:100px;
+            }
+
+            button:hover{
+                background-color: blue;
+            }
+
+            #transform{
+                background-color: blueviolet;
+                height:100px;
+                width:300px;
+                /*transform: rotate(5deg);*/
+                transform: skewX(20deg);
+                margin-left: 20px;
+            }
+        </style>
+
+        <div>
+            <button>button 1</button>
+            <button>button 2</button>
+            <button>button 3</button>
+            <button>button 4</button>
+
+            <div id = "transform"></div>
+        </div>
+    </body>
+</html>
